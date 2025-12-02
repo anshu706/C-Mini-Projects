@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
 
     char name[50];
     int phone_number;
@@ -32,56 +33,56 @@ int main(){
     printf("BILLING SYSTEM\n");
     printf("------------------------\n");
     printf("Customer Details\n\n");
-    
+
     printf("Customer Name: \n");
-    scanf("%s",&name);
+    scanf("%s", &name);
     printf("Customer Number: \n");
-    scanf("%d",&phone_number);
+    scanf("%d", &phone_number);
     printf("Customer ID: \n");
-    scanf("%d",&customer_id);
+    scanf("%d", &customer_id);
 
     printf("------------------------\n");
-    
+
     printf("COSMETICS\n\n");
 
     printf("Body Soap(RS-10): ");
-    scanf("%d",&body_soap);
+    scanf("%d", &body_soap);
     printf("Hair Cream(Rs-25): ");
-    scanf("%d",&hair_cream);
+    scanf("%d", &hair_cream);
     printf("Body Spray(RS-50): ");
-    scanf("%d",&body_spray);
+    scanf("%d", &body_spray);
     printf("Hair Spray(RS-50): ");
-    scanf("%d",&hair_spray);
+    scanf("%d", &hair_spray);
 
     printf("--------------------------\n");
 
     printf("GROCERY\n\n");
 
     printf("Sugar(RS-100): ");
-    scanf("%d",&sugar);
+    scanf("%d", &sugar);
     printf("Tea(RS-15): ");
-    scanf("%d",&tea);
+    scanf("%d", &tea);
     printf("Coffee(RS-50): ");
-    scanf("%d",&coffee);
+    scanf("%d", &coffee);
     printf(" Rice(Rs-150): ");
-    scanf("%d",&rice);
+    scanf("%d", &rice);
     printf("Wheat(RS-160): ");
-    scanf("%d",&wheat);
+    scanf("%d", &wheat);
 
     printf("--------------------\n");
 
     printf("BEVERAGES\n\n");
 
     printf("Pepsi(RS-30): ");
-    scanf("%d",&pepsi);
+    scanf("%d", &pepsi);
     printf("Sprite(Rs-35): ");
-    scanf("%d",&sprite);
+    scanf("%d", &sprite);
     printf("Coke(RS-30): ");
-    scanf("%d",&coke);
+    scanf("%d", &coke);
     printf("Mojitos(RS-25): ");
-    scanf("%d",&mojitos);
+    scanf("%d", &mojitos);
     printf("Thumbs Up(RS-35): ");
-    scanf("%d",&thumbs_up);
+    scanf("%d", &thumbs_up);
 
     printf("-----------------------\n");
 
@@ -97,15 +98,15 @@ int main(){
     cosmetics_total = boso + hc + hs + bosp;
 
     printf("Body Soap: ");
-    printf("%d RS\n",boso);
+    printf("%d RS\n", boso);
     printf("Hair Cream: ");
-    printf("%d RS\n",hc);
+    printf("%d RS\n", hc);
     printf("Hair Spray: ");
-    printf("%d RS\n",hc);
+    printf("%d RS\n", hc);
     printf("Body Spray: ");
-    printf("%d RS\n",bosp);
+    printf("%d RS\n", bosp);
     printf("Total Cosmetic Pricce: ");
-    printf("%d RS\n",cosmetics_total);
+    printf("%d RS\n", cosmetics_total);
 
     printf("---------------------\n");
 
@@ -115,25 +116,25 @@ int main(){
     int r;
     int w;
 
-    s = 100*sugar;
-    t = 15*coffee;
-    c = 50*rice;
-    r = 150*rice;
-    w = 160*wheat;
-    grocery_total = s+t+c+r+w;
+    s = 100 * sugar;
+    t = 15 * coffee;
+    c = 50 * rice;
+    r = 150 * rice;
+    w = 160 * wheat;
+    grocery_total = s + t + c + r + w;
 
     printf("Sugar: ");
-    printf("%d RS\n",s);
+    printf("%d RS\n", s);
     printf("Tea: ");
-    printf("%d RS\n",t);
+    printf("%d RS\n", t);
     printf("Coffee: ");
-    printf("%d RS\n",c);
+    printf("%d RS\n", c);
     printf("Rice: ");
-    printf("%d RS\n",r);
+    printf("%d RS\n", r);
     printf("Wheat: ");
-    printf("%d RS\n",w);
+    printf("%d RS\n", w);
     printf("Total Grocery Price: ");
-    printf("%d RS\n",grocery_total);
+    printf("%d RS\n", grocery_total);
 
     printf("----------------------\n");
 
@@ -143,32 +144,32 @@ int main(){
     int moj;
     int thu;
 
-    pep = 30*pepsi;
-    spr = 35*sprite;
-    cok = 30*coke;
-    moj = 25*mojitos;
-    thu = 35*thumbs_up;
+    pep = 30 * pepsi;
+    spr = 35 * sprite;
+    cok = 30 * coke;
+    moj = 25 * mojitos;
+    thu = 35 * thumbs_up;
     beverage_total = pep + spr + cok + moj + thu;
-    
+
     printf("Pepsi: ");
-    printf("%d RS\n",pep);
+    printf("%d RS\n", pep);
     printf("Sprite: ");
-    printf("%d RS\n",spr);
+    printf("%d RS\n", spr);
     printf("Coke: ");
-    printf("%d RS\n",cok);
+    printf("%d RS\n", cok);
     printf("Mojitos: ");
-    printf("%d RS\n",moj);
+    printf("%d RS\n", moj);
     printf("Thumbs Up: ");
-    printf("%d RS\n",thumbs_up);
+    printf("%d RS\n", thumbs_up);
     printf("Total Beverage Price: ");
-    printf("%d RS\n",beverage_total);
+    printf("%d RS\n", beverage_total);
 
     printf("--------------------------\n");
 
     total = cosmetics_total + grocery_total + beverage_total;
 
     printf("Total Amount: ");
-    printf("%d RS\n",total);
+    printf("%d RS\n", total);
 
     printf("--------------------------\n");
 
@@ -177,35 +178,35 @@ int main(){
     printf("ANTEIKU SUPER MARKET\n\n");
 
     printf("Customer Name: \n");
-    printf("%s\n",name);
+    printf("%s\n", name);
     printf("Customer Number: \n");
-    printf("%d\n",phone_number);
+    printf("%d\n", phone_number);
     printf("Customer ID: \n");
-    printf("%d\n",customer_id);
+    printf("%d\n", customer_id);
 
     printf("Product Name\t\t\tQuantity\t\tPrice\n\n");
-    printf("Body Soap\t\t\t%d\t\t\t%d\n",body_soap,boso);
-    printf("Hair Cream\t\t\t%d\t\t\t%d\n",hair_cream,hc);
-    printf("Body Spray\t\t\t%d\t\t\t%d\n",body_spray,bosp);
-    printf("Hair Spray\t\t\t%d\t\t\t%d\n",hair_spray,hs);
-    printf("Sugar     \t\t\t%d\t\t\t%d\n",sugar,s);
-    printf("Tea       \t\t\t%d\t\t\t%d\n",tea,t);
-    printf("Coffee    \t\t\t%d\t\t\t%d\n",coffee,c);
-    printf("Rice      \t\t\t%d\t\t\t%d\n",rice,r);
-    printf("Wheat     \t\t\t%d\t\t\t%d\n",wheat,w);
-    printf("Pepsi     \t\t\t%d\t\t\t%d\n,",pepsi,pep);
-    printf("Sprite    \t\t\t%d\t\t\t%d\n",sprite,spr);
-    printf("Coke      \t\t\t%d\t\t\t%d\n",coke,cok);
-    printf("Mojitos   \t\t\t%d\t\t\t%d\n",mojitos,moj);
-    printf("Thumbs Up \t\t\t%d\t\t\t%d\n",thumbs_up,thu);
+    printf("Body Soap\t\t\t%d\t\t\t%d\n", body_soap, boso);
+    printf("Hair Cream\t\t\t%d\t\t\t%d\n", hair_cream, hc);
+    printf("Body Spray\t\t\t%d\t\t\t%d\n", body_spray, bosp);
+    printf("Hair Spray\t\t\t%d\t\t\t%d\n", hair_spray, hs);
+    printf("Sugar     \t\t\t%d\t\t\t%d\n", sugar, s);
+    printf("Tea       \t\t\t%d\t\t\t%d\n", tea, t);
+    printf("Coffee    \t\t\t%d\t\t\t%d\n", coffee, c);
+    printf("Rice      \t\t\t%d\t\t\t%d\n", rice, r);
+    printf("Wheat     \t\t\t%d\t\t\t%d\n", wheat, w);
+    printf("Pepsi     \t\t\t%d\t\t\t%d\n,", pepsi, pep);
+    printf("Sprite    \t\t\t%d\t\t\t%d\n", sprite, spr);
+    printf("Coke      \t\t\t%d\t\t\t%d\n", coke, cok);
+    printf("Mojitos   \t\t\t%d\t\t\t%d\n", mojitos, moj);
+    printf("Thumbs Up \t\t\t%d\t\t\t%d\n", thumbs_up, thu);
 
-    printf("Grocery Total Price: %d\n\n",grocery_total);
+    printf("Grocery Total Price: %d\n\n", grocery_total);
 
-    printf("Cosmetics Total Price: %d\n\n",cosmetics_total);
+    printf("Cosmetics Total Price: %d\n\n", cosmetics_total);
 
-    printf("Beverage Total Price: %d\n\n",beverage_total);
+    printf("Beverage Total Price: %d\n\n", beverage_total);
 
-    printf("Total Price: %d\n\n",total);
+    printf("Total Price: %d\n\n", total);
 
     printf("-------------------------------------------------------------------\n");
 
