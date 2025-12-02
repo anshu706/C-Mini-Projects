@@ -1,29 +1,30 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    
+int main()
+{
+
     char card;
-    
+
     int n;
-    
+
     int p;
-    
+
     int a;
-    
+
     int b;
-    
+
     int diff;
-    
+
     int i;
-    
+
     char cad;
 
     printf("Welcome To The ATM\n\n");
 
     printf("Please Insert your card\n\n");
-    scanf("%c",&card);
+    scanf("%c", &card);
 
-    if(card=='k')
+    if (card == 'k')
     {
         printf("Hello Ken Keneki\n\n");
 
@@ -32,21 +33,21 @@ int main(){
 
         b = 50000;
 
-        scanf("%d",&n);
+        scanf("%d", &n);
 
-        if(n==1)
+        if (n == 1)
         {
             printf("Please enter your 4-digit pin: \n");
-            scanf("%d",&p);
+            scanf("%d", &p);
 
-            if(p==1234)
+            if (p == 1234)
             {
-                printf("ENter the amount to be withdrawal: \n");
-                scanf("%d",&a);
+                printf("Enter the amount to be withdrawal: \n");
+                scanf("%d", &a);
 
-                if(a>b)
+                if (a > b)
                 {
-                    printf("insuffficient");
+                    printf("Insuffficient");
                 }
                 else
                 {
@@ -54,23 +55,23 @@ int main(){
 
                     diff = b - a;
 
-                    printf("Now,your bank balance is %d",diff);
+                    printf("Now,your bank balance is %d", diff);
                 }
             }
             else
             {
-                printf("incorrect pin\n\n");
+                printf("Incorrect pin\n\n");
 
                 printf("please try again\n\n");
 
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p==1234)
+                if (p == 1234)
                 {
                     printf("Enter the Amount to be withdrawal: \n");
-                    scanf("%d",&a);
+                    scanf("%d", &a);
 
-                    if(a>b)
+                    if (a > b)
                     {
                         printf("insufficient");
                     }
@@ -80,7 +81,7 @@ int main(){
 
                         diff = b - a;
 
-                        printf("now,your bank balance is %d",diff);
+                        printf("now,your bank balance is %d", diff);
                     }
                 }
                 else
@@ -90,50 +91,50 @@ int main(){
                 }
             }
         }
-        else if(n==2)
+        else if (n == 2)
         {
             printf("please enter your 4-digit pin: \n");
-            scanf("%d",&p);
+            scanf("%d", &p);
 
-            if(p!=1234)
+            if (p != 1234)
             {
                 printf("please try again\n\n");
 
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p!=1234)
+                if (p != 1234)
                 {
                     printf("your request has been blocked\n");
                     printf("so,please try again");
                 }
                 else
                 {
-                    printf("your bank balance is %d",b);
+                    printf("your bank balance is %d", b);
                 }
             }
         }
-        else if(card=='s')
+        else if (card == 's')
         {
             printf("Hello Sasuke Uchiha\n\n");
-            
+
             printf("-> Press 1 to withrawal the money from your account\n\n");
             printf("-> Press 2 to check the balance\n\n");
 
             b = 100000;
 
-            scanf("%d",&n);
+            scanf("%d", &n);
 
-            if(n==1)
+            if (n == 1)
             {
                 printf("Please enter your 4-digit pin: \n");
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p==5678)
+                if (p == 5678)
                 {
                     printf("Enter the Amount to be withdrawal: \n");
-                    scanf("%d",&a);
+                    scanf("%d", &a);
 
-                    if(a>b)
+                    if (a > b)
                     {
                         printf("Insufficient");
                     }
@@ -143,7 +144,7 @@ int main(){
 
                         diff = b - a;
 
-                        printf("now,your bank balance is %d",diff);
+                        printf("now,your bank balance is %d", diff);
                     }
                 }
                 else
@@ -152,14 +153,14 @@ int main(){
 
                     printf("Please try again\n\n");
 
-                    scanf("%d",&p);
+                    scanf("%d", &p);
 
-                    if(p==5678)
+                    if (p == 5678)
                     {
                         printf("Enter the Amount to be withdrawal: \n");
-                        scanf("%d",&a);
+                        scanf("%d", &a);
 
-                        if(a>b)
+                        if (a > b)
                         {
                             printf("insufficient");
                         }
@@ -168,8 +169,8 @@ int main(){
                             printf("Collect the money\n\n");
 
                             diff = b - a;
-                            
-                            printf("now,your bank balance is %d",diff);
+
+                            printf("now,your bank balance is %d", diff);
                         }
                     }
                     else
@@ -179,34 +180,34 @@ int main(){
                     }
                 }
             }
-            else if(n==2)
+            else if (n == 2)
             {
                 printf("Please enter your 4-digit pin: \n");
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p!=5678)
+                if (p != 5678)
                 {
                     printf("Please try again\n\n");
 
-                    scanf("%d",&p);
+                    scanf("%d", &p);
 
-                    if(p!=5678)
+                    if (p != 5678)
                     {
                         printf("your request has been blocked\n");
                         printf("so,please try again");
                     }
                     else
                     {
-                        printf("your bank balance is %d",b);
+                        printf("your bank balance is %d", b);
                     }
                 }
                 else
                 {
-                    printf("your bank balance is %d",b);
+                    printf("your bank balance is %d", b);
                 }
             }
         }
-        else if(card=='i')
+        else if (card == 'i')
         {
             printf("Hello Itachi Uchiha\n\n");
 
@@ -215,19 +216,19 @@ int main(){
 
             b = 60000;
 
-            scanf("%d",&n);
+            scanf("%d", &n);
 
-            if(n==1)
+            if (n == 1)
             {
                 printf("Please enter your 4 digit pin: \n");
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p==9123)
+                if (p == 9123)
                 {
                     printf("Enter the Amount to be withdrawal: \n");
-                    scanf("%d",&a);
+                    scanf("%d", &a);
 
-                    if(a>b)
+                    if (a > b)
                     {
                         printf("insufficient");
                     }
@@ -237,7 +238,7 @@ int main(){
 
                         diff = b - a;
 
-                        printf("now, your bank balance is %d",diff);
+                        printf("now, your bank balance is %d", diff);
                     }
                 }
                 else
@@ -246,14 +247,14 @@ int main(){
 
                     printf("Please try again\n\n");
 
-                    scanf("%d",&p);
+                    scanf("%d", &p);
 
-                    if(p==9123)
+                    if (p == 9123)
                     {
                         printf("Enter the Amount to be withdrawal: \n ");
-                        scanf("%d",&a);
+                        scanf("%d", &a);
 
-                        if(a>b)
+                        if (a > b)
                         {
                             printf("insufficient");
                         }
@@ -263,7 +264,7 @@ int main(){
 
                             diff = b - a;
 
-                            printf("now,your bank balance is %d",diff);
+                            printf("now,your bank balance is %d", diff);
                         }
                     }
                     else
@@ -273,34 +274,34 @@ int main(){
                     }
                 }
             }
-            else if(n==2)
+            else if (n == 2)
             {
                 printf("Please enter your 4-digit pin: \n ");
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p!=9123)
+                if (p != 9123)
                 {
                     printf("PLease try again\n\n");
 
-                    scanf("%d",&p);
+                    scanf("%d", &p);
 
-                    if(p!=9123)
+                    if (p != 9123)
                     {
                         printf("your request has been blocked\n");
                         printf("so,please try again");
                     }
                     else
                     {
-                        printf("your bank balance is %d",b);
+                        printf("your bank balance is %d", b);
                     }
                 }
                 else
                 {
-                    printf("your bank balance is %d",b);
+                    printf("your bank balance is %d", b);
                 }
             }
         }
-        else if(card=='l')
+        else if (card == 'l')
         {
             printf("Hello Light Yagami\n\n");
 
@@ -309,19 +310,19 @@ int main(){
 
             b = 40000;
 
-            scanf("%d",&n);
+            scanf("%d", &n);
 
-            if(n==1)
+            if (n == 1)
             {
                 printf("Please enter your 4 digit pin: \n");
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p==8123)
+                if (p == 8123)
                 {
                     printf("Enter the Amount to be withdrawal: \n");
-                    scanf("%d",&a);
+                    scanf("%d", &a);
 
-                    if(a>b)
+                    if (a > b)
                     {
                         printf("insufficient");
                     }
@@ -331,8 +332,7 @@ int main(){
 
                         diff = b - a;
 
-                        printf("now,your bank balance is %d",diff);
-
+                        printf("now,your bank balance is %d", diff);
                     }
                 }
                 else
@@ -341,14 +341,14 @@ int main(){
 
                     printf("Please try again\n\n");
 
-                    scanf("%d",&p);
+                    scanf("%d", &p);
 
-                    if(p==8123)
+                    if (p == 8123)
                     {
                         printf("enter the amount to be withdrawal: \n");
-                        scanf("%d",&a);
+                        scanf("%d", &a);
 
-                        if(a>b)
+                        if (a > b)
                         {
                             printf("insufficient");
                         }
@@ -358,7 +358,7 @@ int main(){
 
                             diff = b - a;
 
-                            printf("now,your bank balance is %d",diff);
+                            printf("now,your bank balance is %d", diff);
                         }
                     }
                     else
@@ -368,30 +368,30 @@ int main(){
                     }
                 }
             }
-            else if(n==2)
+            else if (n == 2)
             {
                 printf("Please enter 4-igit pin: \n");
-                scanf("%d",&p);
+                scanf("%d", &p);
 
-                if(p!=8123)
+                if (p != 8123)
                 {
                     printf("please try again\n\n");
 
-                    scanf("%d",&p);
+                    scanf("%d", &p);
 
-                    if(p!=8123)
+                    if (p != 8123)
                     {
                         printf("your request has been blocked\n");
                         printf("so,please try again");
                     }
                     else
                     {
-                        printf("your bank balance is %d",b);
+                        printf("your bank balance is %d", b);
                     }
                 }
                 else
                 {
-                    printf("your bank balance is %d",b);
+                    printf("your bank balance is %d", b);
                 }
             }
         }
